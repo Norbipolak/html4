@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 CSS óra</title>
+    <style>
+        * {
+            /*Az összes elemre fog vonatkozni*/
+            /* margin: 0;
+            padding: 0;
+            box-sizing: border-box;*/
+        }
+
+        body {
+            min-height: 5000px;
+        }
+
+        #square {
+            width: 250px;
+            height: 250px;
+            background-color: red;
+        }
+
+        .square {
+            width: 250px;
+            height: 250px;
+
+
+        }
+
+        .red-bg {
+            background-color: red;
+        }
+
+        .blue-bg {
+            background-color: blue;
+        }
+
+        span {
+            background-color: salmon;
+        }
+
+        #dimension-square {
+            /*min-height: 150px;
+            max-height: 500px;*/
+            width: 300px;
+            height: 300px;
+            background-color: goldenrod;
+
+            margin-left: 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-right: 25px;
+
+            /* margin 
+óramutató járása szerint állítja be fentről kezdve
+*/
+
+            /*margin: 15px 20px 15px 20px*/
+
+            margin: 25px 15px 75px;
+            /*fent jobb lent*/
+
+            margin: 50px 25px;
+            /*fent és lent
+            jobb és bal*/
+
+            /*leggyakrabban használt egy érték, ami mindenre vonatkozik*/
+            margin: 50px;
+
+            margin: auto;
+
+            /* horizontálisan középre legyen helyezve de fent és lent legyen margin*/
+            margin: 25px auto;
+
+            /*belső margó az a padding, ami nagyon hasonlít a füzet margójára*/
+
+            padding: 15px;
+            padding-left: 25px;
+
+            /*
+                szegély
+            */
+            /*szegély szélessége*/
+            border-left-width: 3px;
+            /*szegély stilusa*/
+            border-left-style: dashed;
+            /*szegély szine*/
+            border-left-color: brown;
+
+            border-right: 5px solid maroon;
+
+            border: 5px dotted maroon;
+
+            /*
+            box-sizing
+            Az eredeti magasságba és szélességbe 
+            beleszámítson-e a padding és a border.
+            content-box -> az alapbeállítás 
+            border-box -> nem számítja hozzá 
+            */
+            box-sizing: border-box;
+
+            .square1,
+            square2 {
+                width: 230px;
+                height: 230px;
+            }
+
+            .sqaure2 {
+                border: 1px solid grey;
+            }
+
+            .square1 {
+                background-color: purple;
+            }
+
+            .class1.class2 {
+                padding: 15px;
+                background-color: indianred;
+            }
+
+            /*.square2 {
+                width: 230px;
+                height: 230px;
+            }*/
+            p {
+                color: grey;
+
+                /*szöveg elrendezése
+                horizontális rendezés*/
+
+                text-align: center;
+                /*justify - sorkizárt faltól falig
+                left, right center*/
+
+                /*sorok közötti távolság*/
+                line-height: 100px;
+                /*megfelezi 50px alul és felül is*/
+
+                /*elsö sor behuzás
+                */
+                text-indent: 25px;
+            }
+
+            .word-spacing {
+                word-spacing: 15px;
+            }
+.letter-spacing{
+            letter-spacing:5px; ;
+}
+    </style>
+</head>
+
+<body>
+    <h1>
+        Mi az a CSS és mire használjuk?
+    </h1>
+    <h2>
+        Szelektorok(elemek kijelőlése)
+    </h2>
+    <h3>
+        ID (azonosító)
+    </h3>
+    <p>
+        ID egy egyedi azonosító. Egy tagnek csak egy ID-ja lehet,
+        egy id-t csak egyetlen tag kaphat meg.
+    </p>
+    <div id="square"></div>
+
+    <h3>
+        Class (osztályba sorolás)
+    </h3>
+    <p>
+        A class az osztályba sorlást jelenti. Egy tag-et lehet több osztályba
+        sorolni is, egy tag kaphat több osztályt is.
+    </p>
+
+    <div class="square-red-bg"></div>
+    <div class="square-blue-bg"></div>
+
+    <h3>Tagnév</h3>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+
+    <h1>Alapvető dimenziók</h1>
+    <div id="dimension-square" style="margin-bottom: 50px;background-color: blue;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quaerat possimus vel aliquam beatae expedita odit doloremque
+        ipsam dolorum veritatis, quis odio architecto illum, sunt reprehenderit?
+
+    </div>
+
+    <div id="dimension-square">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quaerat possimus vel aliquam beatae expedita odit doloremque
+        ipsam dolorum veritatis, quis odio architecto illum, sunt reprehenderit?
+
+    </div>
+
+    <ul>
+        <li>asdfg</li>
+        <li>asdfg</li>
+        <li>asdfg</li>
+    </ul>
+
+    <h1>Speciális kijelőlések</h1>
+    <div class="square1"></div>
+    <div class="square2"></div>
+
+    <div class="class1 class2"></div>
+    <div class="class1"></div>
+
+    <h1>Szövegrendezés</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quam, cupiditate. Labore ullam porro beatae nemo nisi officiis
+        distinctio provident dolorum quisquam, explicabo placeat
+        consequatur et, reprehenderit pariatur nesciunt minima obcaecati
+        assumenda consectetur quam corrupti cum amet. Quidem explicabo natus
+        incidunt aperiam porro minus, sed earum rerum. Voluptatibus dolore consequuntur accusantium.
+    </p>
+
+<div class="word-spacing letter-spacing">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quam, cupiditate. Labore ullam porro beatae nemo nisi officiis
+    distinctio provident dolorum quisquam, explicabo placeat
+    consequatur et, reprehenderit pariatur nesciunt minima obcaecati
+    assumenda consectetur quam corrupti cum amet. Quidem explicabo natus
+    incidunt aperiam porro minus, sed earum rerum. Voluptatibus dolore consequuntur accusantium.
+</div>
+
+</body>
+
+</html>
